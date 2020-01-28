@@ -1,8 +1,10 @@
+#Speed distance time calc!
 def sdtcalc():
     print("Welcome to Speed, Distance, Time Calculator!")
     while True:
+#Take user input for what they are solving for, or if they input someting invalid
         solve = input("Are you solving for speed, distance or time? ")
-
+#if user inputs time, it solves for time using data inputted
         if solve.lower() == ("time"):
                 distance = float(input("How far are you launching the object? "))
                 while True:
@@ -60,6 +62,7 @@ def sdtcalc():
                         else:
                             print("Invalid Input")
                             continue
+#if user inputs speed, it solves for speed using data inputted
 
         elif solve.lower() == ("speed"):
             while True:
@@ -101,6 +104,9 @@ def sdtcalc():
                         else:
                             print("Invalid Input")
                             continue
+                            
+ #if user inputs distance, it solves for distance using data inputted
+
         elif solve.lower() == ("distance"):
             while True:
                 speed = float(input("How fast is the object traveling? "))
